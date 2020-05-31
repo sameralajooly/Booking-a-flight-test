@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_251)" generated="20200601 02:22:32.855">
+<suite source="C:\Book a flight test\src\main\robot" name="Robot" id="s1">
+<suite source="C:\Book a flight test\src\main\robot\LoginTestCases.robot" name="LoginTestCases" id="s1-s1">
+<test name="Book flight" id="s1-s1-t1">
+<kw library="bookAFlight.LoginTest" name="Book A Flight">
+<assign>
+<var>${result}</var>
+</assign>
+<msg level="INFO" timestamp="20200601 02:22:54.431">1590967355374	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\LENOVO~1\\AppData\\Local\\Temp\\rust_mozprofileiQ3Tfo"
+1590967355804	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590967356284	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590967356284	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590967356284	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590967356284	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590967358511	Marionette	INFO	Listening on port 58512
+Jun 01, 2020 2:22:39 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1590967372424	Marionette	INFO	Stopped listening on port 58512
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv</msg>
+<msg level="INFO" timestamp="20200601 02:22:54.437">${result} = Valid</msg>
+<status endtime="20200601 02:22:54.445" starttime="20200601 02:22:33.464" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>${valid}</arg>
+</arguments>
+<status endtime="20200601 02:22:54.458" starttime="20200601 02:22:54.448" status="PASS"></status>
+</kw>
+<doc>Test booking a flight</doc>
+<status critical="yes" endtime="20200601 02:22:54.460" starttime="20200601 02:22:33.460" status="PASS"></status>
+</test>
+<test name="Invalid login" id="s1-s1-t2">
+<kw library="bookAFlight.LoginTest" name="Invalid Login">
+<assign>
+<var>${result}</var>
+</assign>
+<msg level="INFO" timestamp="20200601 02:23:08.030">1590967375000	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\LENOVO~1\\AppData\\Local\\Temp\\rust_mozprofileuIXgZW"
+1590967375428	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590967375930	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590967375930	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590967375930	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590967375930	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590967377959	Marionette	INFO	Listening on port 58565
+1590967386494	Marionette	INFO	Stopped listening on port 58565
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv</msg>
+<msg level="INFO" timestamp="20200601 02:23:08.035">${result} = Valid</msg>
+<status endtime="20200601 02:23:08.036" starttime="20200601 02:22:54.469" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>${valid}</arg>
+</arguments>
+<status endtime="20200601 02:23:08.046" starttime="20200601 02:23:08.039" status="PASS"></status>
+</kw>
+<doc>Test invalid login</doc>
+<status critical="yes" endtime="20200601 02:23:08.048" starttime="20200601 02:22:54.465" status="PASS"></status>
+</test>
+<status endtime="20200601 02:23:08.064" starttime="20200601 02:22:33.228" status="PASS"></status>
+</suite>
+<status endtime="20200601 02:23:08.111" starttime="20200601 02:22:32.871" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" name="Robot" id="s1">Robot</stat>
+<stat pass="2" fail="0" name="LoginTestCases" id="s1-s1">Robot.LoginTestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

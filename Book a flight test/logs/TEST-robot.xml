@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" skip="0" tests="2" name="Robot" errors="0">
+<testcase classname="Robot.LoginTestCases" name="Book flight" time="21">
+</testcase>
+<testcase classname="Robot.LoginTestCases" name="Invalid login" time="14">
+</testcase>
+</testsuite>
