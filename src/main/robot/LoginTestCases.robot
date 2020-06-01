@@ -1,16 +1,16 @@
 *** Settings ***
-Library  bookAFlight.LoginTest
+Library  bookAFlight.Login
 Library  OperatingSystem
 *** Variables ***
 ${valid}  Valid
 *** Testcases ***
 
-Book flight
-    [Documentation]     Test booking a flight
-    ${result} =   book A Flight
+Valid login
+    [Documentation]     Test valid login
+    ${result} =   validLogin
     Should Be Equal  ${result}  ${valid}
 
 Invalid login
     [Documentation]     Test invalid login
-    ${result} =   invalid Login
+    ${result} =   invalidLogin
     Should Be Equal  ${result}  ${valid}

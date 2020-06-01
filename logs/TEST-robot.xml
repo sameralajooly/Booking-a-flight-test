@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="0" skip="0" tests="2" name="Robot" errors="0">
-<testcase classname="Robot.LoginTestCases" name="Book flight" time="21">
+<testsuite failures="0" skip="0" tests="5" name="Robot" errors="0">
+<testcase classname="Robot.BookFlightTestCases" name="Book flight" time="29">
+</testcase>
+<testcase classname="Robot.BookFlightTestCases" name="Validate flight finder page" time="15">
+</testcase>
+<testcase classname="Robot.BookFlightTestCases" name="Verify flight data" time="25">
+</testcase>
+<testcase classname="Robot.LoginTestCases" name="Valid login" time="15">
 </testcase>
 <testcase classname="Robot.LoginTestCases" name="Invalid login" time="14">
 </testcase>

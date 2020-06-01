@@ -1,1 +1,5 @@
-bookAFlight\LoginTest.class
+bookAFlight\Login.class
+bookAFlight\Booking.class
+bookAFlight\Constants.class
+bookAFlight\BookAFlight.class
+bookAFlight\BrowserDriver.class
