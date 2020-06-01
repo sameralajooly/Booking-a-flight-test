@@ -17,3 +17,5 @@ The following instructions assuming the user is using Intellij IDEA:
 - Go to java class BrowserDriver in "bookAFlight" package and change the driverPath variable to your driver path.
 
 To run Robot files double click ctrl to open run anything and run "mvn robotframework:run"
+
+There is test plan in the directory
